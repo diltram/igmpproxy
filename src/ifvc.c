@@ -79,7 +79,7 @@ void rebuildIfVc () {
 
     IfEp = (void *)((char *)IfVc + IoCtlReq.ifc_len);
 
-    for ( IfPt = IfVc; IfPt < IfEp; IfPt = IfNext ) {
+    for ( IfPt = IfVc; IfPt <= IfEp; IfPt = IfNext ) {
         struct ifreq IfReq;
         char FmtBu[ 32 ];
 
